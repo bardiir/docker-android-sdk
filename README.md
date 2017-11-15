@@ -5,3 +5,4 @@
 This is an adjusted version of https://github.com/mindrunner/docker-android-sdk that is fitted for our specific purposes and needs.
 - Pulls automatically the latest Android SDK Version
 - Includes aapt
+- Uses Ubuntu "latest" instead of a hardcoded Version
