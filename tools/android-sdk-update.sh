@@ -6,6 +6,7 @@ source /opt/android-sdk-linux/bin/android-env.sh
 
 built_in_sdk=1
 
+AndroidSDKVersion=`curl https://d1bzmw09lghr41.cloudfront.net`
 
 echo $#
 
@@ -32,7 +33,7 @@ then
   echo "SDK Tools already bootstrapped. Skipping initial setup"
 else
   echo "Bootstrapping SDK-Tools"
-  wget -q https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip -O sdk-tools-linux.zip
+  wget -q "https://dl.google.com/android/repository/sdk-tools-linux-${AndroidSDKVersion}.zip" -O sdk-tools-linux.zip
   unzip sdk-tools-linux.zip
 fi
 
