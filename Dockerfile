@@ -8,7 +8,7 @@ ENV ANDROID_HOME /opt/android-sdk-linux
 ENV ANDROID_SDK /opt/android-sdk-linux
 
 ENV DEBIAN_FRONTEND=noninteractive 
-ENV TZ=Europe/Minsk
+ENV TZ=Europe/Berlin
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # ------------------------------------------------------
