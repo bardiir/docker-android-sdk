@@ -7,6 +7,10 @@ ENV ANDROID_SDK_ROOT /opt/android-sdk-linux
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV ANDROID_SDK /opt/android-sdk-linux
 
+ENV DEBIAN_FRONTEND=noninteractive 
+ENV TZ=Europe/Minsk
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # ------------------------------------------------------
 # --- Install required tools
 # Dependencies to execute Android builds
